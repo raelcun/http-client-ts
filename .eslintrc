@@ -1,0 +1,10 @@
+{
+  "extends": ["airbnb-typescript-prettier"],
+  "rules": {
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": true, "optionalDependencies": true, "peerDependencies": false, "bundledDependencies": true }
+    ]
+  }
+}

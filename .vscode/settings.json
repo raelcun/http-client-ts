@@ -1,0 +1,20 @@
+{
+    "jest.pathToJest": "npm run test --",
+    "eslint.validate": ["javascript", "typescript"],
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false
+    },
+    "editor.rulers": [140],
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.fontSize": 12
+  }
+  
