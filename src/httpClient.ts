@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch'
+import fetch from 'cross-fetch' // window.fetch or node-fetch
 import { pipe } from 'fp-ts/lib/pipeable'
 import * as t from 'io-ts'
 import { decode } from './modules/decoder/decode'

@@ -6,7 +6,8 @@
   "author": "Dan Taylor <dt.raelcun@gmail.com>",
   "license": "MPL 2.0",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "build": "babel src -d lib --extensions \".ts\""
   },
   "dependencies": {
     "cross-fetch": "^3.0.6",
@@ -15,6 +16,7 @@
     "io-ts-reporters": "^1.2.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",

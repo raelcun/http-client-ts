@@ -1,2 +1,2 @@
 export * from './types'
-export { request } from './request'
+export { createRequest } from './request'

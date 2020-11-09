@@ -1,5 +1,12 @@
-export type RequestConfig = RequestInit & {
-  url: string
-  requestFn: (url: string, init: RequestInit) => Promise<Response>
+export type TypedResponse<T> = Pick<
+  Response,
+  'headers' | 'redirected' | 'status' | 'type' | 'url' | 'statusText' | 'ok'
+> & {
+  body?: T
 }
-export type RequestFn<T = Response> = (config: RequestConfig) => Promise<T>
+export type BaseRequestConfig = RequestInit & { url: string }
+export type RequestFn<T> = (config: BaseRequestConfig) => Promise<TypedResponse<T>>
+export type FetchFn = (
+  url: string,
+  config?: RequestInit
+) => Promise<TypedResponse<unknown> & { json: () => Promise<unknown> }>
